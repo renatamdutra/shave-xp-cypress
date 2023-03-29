@@ -1,0 +1,33 @@
+{
+    "success": {
+        "name": "Renata",
+        "email": "renatamachadodutra@gmail.com",
+        "password": "102030",
+        "is_shaver": false
+    },
+    "invpass": {
+        "email": "renatamachadodutra@gmail.com",
+        "password": "102038"
+    },
+    "email404": {
+        "email": "renatamachado@gmail.com",
+        "password": "102030"
+    },
+    "shortpass": [
+        "1",
+        "12",
+        "123",
+        "1234",
+        "12345"
+    ],
+    "invemails": [
+        "renata&gmail.com",
+        "renata.com",
+        "@renata.com",
+        "@",
+        "renata@",
+        "123445",
+        "@#$%@",
+        "xpto123@"
+    ]
+}

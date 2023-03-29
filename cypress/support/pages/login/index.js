@@ -39,8 +39,8 @@ class LoginPage {
         cy.get(this.alertError)
             .should('have.length', 2)
             .and(($small) => {
-                expect($small.get(0).textContent).to.equal('E-mail é obrigatório')
-                expect($small.get(1).textContent).to.equal('Senha é obrigatória')
+                expect($small.get(0).textContent).to.equal('emailMessage')
+                expect($small.get(1).textContent).to.equal('passwordMessage')
             })
     }
 }
