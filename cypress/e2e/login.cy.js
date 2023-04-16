@@ -1,4 +1,4 @@
-import loginPage from '../support/pages/login'
+import loginPage from '../support/pages/views/login'
 import shaversPage from '../support/pages/shavers'
 
 import data from '../fixtures/users-login.json'
@@ -37,7 +37,6 @@ describe('login', () => {
         it('campos obrigatórios', () => {
             loginPage.submit()
             loginPage.requiredFields('E-mail é obrigatório', 'Senha é obrigatória')
-
         })
     })
 
@@ -46,7 +45,6 @@ describe('login', () => {
             it(`não deve logar com a senha: ${p}`, () => {
                 loginPage.submit('renatamachadodutra@gmail.com', p)
                 loginPage.alertShouldBe('Pelo menos 6 caracteres')
-
             })
         })
     })
@@ -56,7 +54,6 @@ describe('login', () => {
             it(`não deve logar com o email: ${e}`, () => {
                 loginPage.submit(e, '102030')
                 loginPage.alertShouldBe('Informe um email válido')
-
             })
         })
     })
