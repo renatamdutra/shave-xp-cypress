@@ -1,5 +1,5 @@
 import loginPage from '../support/pages/views/login'
-import shaversPage from '../support/pages/shavers'
+import shaversPage from '../support/pages/views/shavers'
 
 import data from '../fixtures/users-login.json'
 
